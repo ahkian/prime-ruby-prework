@@ -1,9 +1,14 @@
 def prime?(int)
-  range = (2...int).to_a
-  range.each do |num|
-    if int % num == 0
-      return false
+  if int > 0
+    range = (2...int).to_a
+    p range
+    range.each do |num|
+      if int % num == 0
+        return false
+      end
     end
+    true
+  else
+    return false
   end
-  true
 end
