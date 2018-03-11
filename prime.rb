@@ -1,5 +1,7 @@
 def prime?(int)
-  if int > 0
+  if int == 1
+    return false
+  elsif int > 0
     range = (2...int).to_a
     p range
     range.each do |num|
