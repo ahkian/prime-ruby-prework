@@ -1,1 +1,9 @@
-# Add  code here!
+def prime?(int)
+  range = (2...int)
+  range.each do |num|
+    if int % num == 0
+      return true
+    end
+  end
+  return false
+end
